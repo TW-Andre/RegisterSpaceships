@@ -1,3 +1,3 @@
 # RegisterSpaceships
 
-Visualization link: https://tw-andre.github.io/RegisterSpaceships/
+Preview link: https://tw-andre.github.io/RegisterSpaceships/
