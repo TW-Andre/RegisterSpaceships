@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaceships</title>
+
+    <style>
+        body {
+            background-color: rgb(26, 23, 23);
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            font-size: 3em;
+            background-image: linear-gradient(170deg, rgb(0, 225, 255), rgb(7, 254, 106));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        h1::selection,
+        p::selection {
+            background-color: rgba(0, 187, 255, 0.5);
+        }
+
+        #main {
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        .container-1 {
+            display: block;
+            width: 45vw;
+            background-color: rgb(1, 54, 82);
+            text-align: center;
+            padding: 0.6rem;
+        }
+
+        .container-1 div{
+            text-align: center;
+        }
+
+        .buttons {
+            margin-top: 2.5em;
+        }
+
+        .buttons p{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+
+        .buttons button {
+            background-color: aqua;
+            color: black;
+            border: 1px solid rgb(1, 160, 160);
+            cursor: pointer;
+        }
+
+        .buttons button:hover {
+            background-color: rgb(6, 194, 194);
+        }
+
+        .container-2 {
+            display: flex;
+            justify-content: center;
+            width: 45vw;
+            background-color: rgb(1, 111, 121);
+            padding: 0.6rem;
+        }
+
+        .box-select select {
+            width: 25vw;
+        }
+
+        .box-select select span {
+            font-weight: bold;
+        }
+
+        .container-2 #reset {
+            margin-top: 18rem;
+            margin-left: 0.6rem;
+            background-color: rgb(9, 255, 0);
+            border: 2px solid rgb(6, 255, 106);
+            border-radius: 3rem;
+            cursor: pointer;
+        }
+
+        .container-2 #reset:hover {
+            background-color: rgba(6, 255, 110, 0.788);
+            border: 2px solid rgba(6, 255, 81, 0.858);
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Let's start the party</h1>
+
+    <main id="main">
+        <section class="container-1">
+            <div class="buttons">
+                <p>Click to register the spaceships</p>
+                <button id="register" style="width: 6rem; height: 4rem;">Register</button>
+            </div>
+            
+            <div class="buttons">
+                <p>Select the spaceship you want to hitch</p>
+                <button id="clickHitched" onclick="chooseHitched()" style="width: 6rem; height: 4rem;">Choose</button>
+            </div>
+        </section>
+            
+        <section class="container-2">
+            <div class="box-select">
+                <select name="selSpaceships" id="selSelect" size="20">
+                    <!-- EXIBIR AS NAVES-->
+                </select>
+            </div>
+            <div>
+                <button id="reset" onclick="resetAll()" style="width: 5rem; height: 3rem;">Reset</button>
+            </div>
+        </section>
+    </main>
+
+    <script src=""></script>
+</body>
+</html>
